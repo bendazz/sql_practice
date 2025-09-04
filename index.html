@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eagles SQL Practice</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #004953 0%, #A5ACAF 100%);
+            color: #fff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+        }
+        header {
+            background: #004953;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            color: #A5ACAF;
+            text-shadow: 2px 2px 8px #000;
+        }
+        .sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem auto;
+            max-width: 1000px;
+        }
+        .section {
+            background: rgba(0, 73, 83, 0.9);
+            border-radius: 1rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            padding: 2rem 1.5rem;
+            min-width: 220px;
+            flex: 1 1 220px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .section:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #7ED957;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+        .eagles-logo {
+            width: 80px;
+            margin: 1rem auto 0.5rem auto;
+            display: block;
+        }
+        @media (max-width: 700px) {
+            .sections {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Philadelphia_Eagles_logo.svg" alt="Eagles Logo" class="eagles-logo">
+        <h1>Philadelphia Eagles SQL Practice</h1>
+    </header>
+    <main>
+        <div style="max-width: 700px; margin: 2rem auto 1rem auto; background: rgba(165,172,175,0.15); border-radius: 0.75rem; padding: 1.25rem 1.5rem; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); font-size: 1.15rem;">
+            <strong>Directions:</strong> In all questions, you will be determining a regular season rushing statistic for Saquon Barkley. Your goal is to write an sql query that returns the correct answer.
+        </div>
+        <div class="sections">
+            <div class="section" id="wild-card">
+                <h2>Wild Card Round</h2>
+                <ul style="list-style: none; padding: 0; margin: 1.5rem 0 0 0; font-size: 1.1rem;">
+                    <li><strong>YDS</strong> <span style="color:#7ED957;">(answer: 2005)</span></li>
+                    <li><strong>FUM</strong> <span style="color:#7ED957;">(answer: 2)</span></li>
+                    <li><strong>LST</strong> <span style="color:#7ED957;">(answer: 1)</span></li>
+                </ul>
+            </div>
+            <div class="section" id="divisional-round">
+                <h2>Divisional Round</h2>
+                <ul style="list-style: none; padding: 0; margin: 1.5rem 0 0 0; font-size: 1.1rem;">
+                    <li><strong>LNG</strong> <span style="color:#7ED957;">(answer: 72)</span></li>
+                    <li><strong>BIG</strong> <span style="color:#7ED957;">(answer: 17)</span></li>
+                </ul>
+            </div>
+            <div class="section" id="conference-championship">
+                <h2>Conference Championship</h2>
+                <ul style="list-style: none; padding: 0; margin: 1.5rem 0 0 0; font-size: 1.1rem;">
+                    <li><strong>FD</strong> <span style="color:#7ED957;">(answer: 82)</span></li>
+                    <li><strong>TD</strong> <span style="color:#7ED957;">(answer: 13)</span></li>
+                </ul>
+            </div>
+            <div class="section" id="super-bowl">
+                <h2>Super Bowl</h2>
+                <ul style="list-style: none; padding: 0; margin: 1.5rem 0 0 0; font-size: 1.1rem;">
+                    <li><strong>CAR</strong> <span style="color:#7ED957;">(answer: 345)</span></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script>
+        // Placeholder for future JS logic
+    </script>
+</body>
+</html>
